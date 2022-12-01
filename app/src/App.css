@@ -1,0 +1,120 @@
+
+@font-face {
+  font-family: 'basefont';
+  src: url('assets/font/TK3gWksYAxQ7jbsKcg8Eneo.woff2');
+}
+
+
+*{
+  font-family: 'basefont';
+}
+
+body{
+  background-color: #222222;
+}
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  flex-direction: column;
+  row-gap: 50px;
+}
+*{
+  color: white;
+}
+button,select,option,input{
+  color: black;
+}
+input{
+  font-family: sans-serif;
+}
+select{
+  margin-top: 19px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+/* CSS */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.inputselect{
+  display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+/* CSS */
+.button-12 {
+  background-color: #df4a21;
+  border-radius: 100px;
+  box-shadow: rgba(187, 58, 44, 0.2) 0 -25px 18px -14px inset,rgba(187, 49, 44, 0.15) 0 1px 2px,rgba(187, 96, 44, 0.15) 0 2px 4px,rgba(187, 106, 44, 0.15) 0 4px 8px,rgba(187, 53, 44, 0.15) 0 8px 16px,rgba(187, 80, 44, 0.15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-12:hover {
+  box-shadow: rgba(187, 82, 44, 0.35) 0 -25px 18px -14px inset,rgba(187, 51, 44, 0.25) 0 1px 2px,rgba(187, 44, 44, 0.25) 0 2px 4px,rgba(187, 44, 44, 0.25) 0 4px 8px,rgba(187, 44, 44, 0.25) 0 8px 16px,rgba(212, 20, 20, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+  .formcontainer {
+    display: flex;
+    justify-content: space-around;
+    /* height: 111%; */
+    width: 100%;
+}
+.disable{
+  cursor: not-allowed;
+  background-color: rgb(176, 172, 172);
+  box-shadow: none;
+  color: aliceblue;
+}
+.usersubmitiontext h2{
+  font-family: sans-serif;
+}
+h4{
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 19px;
+  margin-top: 16px;
+}
