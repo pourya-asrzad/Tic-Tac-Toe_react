@@ -9,9 +9,9 @@
   font-family: 'basefont';
 }
 
-body{
+/* body{
   background-color: #222222;
-}
+} */
 .App{
   display: flex;
   align-items: center;
@@ -117,4 +117,82 @@ h4{
   font-family: sans-serif;
   font-size: 19px;
   margin-top: 16px;
+}
+.Modal {
+  background: #415c56;
+  width: 36rem;
+  height: 18rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: rgba(208, 199, 199, 0.35) 0px 5px 15px;
+}
+.Modal button{
+  font-size: 18px;
+  background-color: #4197ec;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 8px 11px;
+  border: 0;
+  border-radius: 15px;
+}
+.mofdalghost{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfcfc3d;
+}
+.wintxt{
+  margin-left: 24px;
+}
+.Timer h2{
+  margin: 0;
+}
+.Timer{
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 10px; */
+  position: absolute;
+  bottom: 23px;
+}
+.redc{
+color: #df4a21;
+}
+.bluec{
+color: #4197ec;
+}
+.Themebtn{
+  position: absolute;
+  top: 10px;
+  right: 34px;
+  font-size: 14px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+  width: 11rem;
+    height: 1.5rem;
+    border-radius: 8px;
+    margin-right: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+  }
+  /* label{
+    color: black;
+  } */
+.colorblack{
+  color: black;
+}
+/* .usersubmitiontext h2{
+  color: rgb(253, 249, 249);
+} */
+.white{
+  color: white;
 }

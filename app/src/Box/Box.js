@@ -25,7 +25,7 @@ const Box = (props) => {
       onClick={(event) => {
         cellClickHandler(event);
       }}
-      className={styles.Box}
+      className={props.theme ? styles.Boxtheme : styles.Box}
     >
       {Shapecopy}
     </div>

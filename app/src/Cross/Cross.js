@@ -9,14 +9,16 @@ const Cross = () => {
           y1="10"
           x2="90"
           y2="90"
-          style={{ stroke: "#00AAC4", "stroke-width": 12 }}
+          style={{ stroke: "#00AAC4" }}
+          strokeWidth="12 "
         ></line>
         <line
           x1="90"
           y1="10"
           x2="10"
           y2="90"
-          style={{ stroke: "#00AAC4", "stroke-width": 12 }}
+          style={{ stroke: "#00AAC4" }}
+          strokeWidth="12 "
         ></line>
       </svg>
     </div>

@@ -46,14 +46,13 @@ const Main = (props) => {
     const winningStates = [
       ["1", "2", "3"],
       ["4", "5", "6"],
-      ["7", "8", "6"],
+      ["7", "8", "9"],
       ["1", "4", "7"],
       ["2", "5", "8"],
       ["3", "6", "9"],
       ["7", "5", "3"],
       ["1", "5", "9"],
     ];
-    console.log(getLocationUser2);
 
     winningStates.forEach((winningState) => {
       const xWins = winningState.every((state) =>
@@ -62,17 +61,26 @@ const Main = (props) => {
       const oWins = winningState.every((state) =>
         getLocationUser1.includes(state)
       );
-      console.log(xWins);
+      const filterX = props.userNames.filter((elemen) => {
+        return elemen.type == "X";
+      });
+      const filterO = props.userNames.filter((elemen) => {
+        return elemen.type == "O";
+      });
+      // console.log();
       if (xWins || oWins) {
-        xWins ? alert("X wins!") : alert("O wins!");
+        xWins
+          ? props.onGetWinner(filterX[1].name)
+          : props.onGetWinner(filterO[1].name);
       }
     });
   }
   return (
-    <div className={styles.Main}>
+    <div className={props.theme ? styles.Mainlight : styles.Main}>
       {data.map((element) => {
         return (
           <Box
+            theme={props.theme}
             id={element.id}
             key={element.id}
             shape={element.shape}

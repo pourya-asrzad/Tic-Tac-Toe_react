@@ -24,13 +24,16 @@ const Form = (props) => {
       <form onSubmit={formSubmitHandler} className="form">
         <div className="inputselect">
           <Input
+            theme={props.theme}
             onGetData={getData}
             txt="Enter your name :"
             disable={props.disable}
           ></Input>
           {/* <h4>O</h4> */}
           {props.user2 ? (
-            <h4>{props.secondUser}</h4>
+            <h4 className={props.theme ? "colorblack" : ""}>
+              {props.secondUser}
+            </h4>
           ) : (
             <Select onChangeSelect={onChangeSelect} disable={props.disable} />
           )}

@@ -12,3 +12,13 @@
 .Box:hover {
     background-color: #383838;
 }
+
+.Boxtheme {
+    height: 150px;
+    width: 150px;
+    background-color: #fffbfb;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

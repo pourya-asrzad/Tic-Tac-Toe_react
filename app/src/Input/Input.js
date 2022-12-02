@@ -6,7 +6,9 @@ const Input = (props) => {
   }
   return (
     <div>
-      <label htmlFor="uniqe">{props.txt}</label>
+      <label className={props.theme ? " colorblack" : "white"} htmlFor="uniqe">
+        {props.txt}
+      </label>
       <br />
       <input
         disabled={props.disable}
