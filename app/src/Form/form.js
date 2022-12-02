@@ -11,8 +11,14 @@ const Form = (props) => {
       props.setuserdata(name, type);
     }
   }
+
   function getData(value) {
-    setIsValid(value.length > 6);
+    if (props.user1) {
+      if (value == props.user1) {
+        return;
+      }
+    }
+    setIsValid(value.length > 4);
     setName(value);
   }
   function onChangeSelect(value) {

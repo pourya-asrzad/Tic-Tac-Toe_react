@@ -42,6 +42,7 @@ const FormContainer = (props) => {
     Playerinfo2.userName,
     Playerinfo2.type
   );
+  console.log(Playerinfo1.userName);
   return (
     <div className="formcontainer">
       {Playerinfo2.type && Playerinfo2.userName ? (
@@ -52,6 +53,7 @@ const FormContainer = (props) => {
         />
       ) : (
         <Form
+          user1={Playerinfo1.userName}
           theme={props.theme}
           disable={Playerinfo1.type && Playerinfo1.userName ? false : "disable"}
           setuserdata={setuserdata2}
@@ -68,6 +70,7 @@ const FormContainer = (props) => {
         />
       ) : (
         <Form
+          user1={Playerinfo1.userName}
           theme={props.theme}
           setuserdata={setuserdata}
           classname="button-33"

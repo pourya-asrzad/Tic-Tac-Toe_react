@@ -11,7 +11,7 @@ function App() {
   const [getGame, setGame] = useState(false);
   const [minuteToModal, setMinutetoModa] = useState(0);
   const [secondeToModal, setSeconeToModal] = useState(0);
-  const [tuggle, settheme] = useState(false);
+  const [tuggle, settheme] = useState(true);
   let userName = [];
   function getFirstType(type, user1, user2, type2) {
     setFirstType(type);

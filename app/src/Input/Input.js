@@ -4,6 +4,7 @@ const Input = (props) => {
   function setinputvalu(event) {
     props.onGetData(event.target.value);
   }
+  console.log(props.theme);
   return (
     <div>
       <label className={props.theme ? " colorblack" : "white"} htmlFor="uniqe">

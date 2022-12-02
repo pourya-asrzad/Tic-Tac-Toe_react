@@ -67,7 +67,7 @@ const Main = (props) => {
       const filterO = props.userNames.filter((elemen) => {
         return elemen.type == "O";
       });
-      // console.log();
+
       if (xWins || oWins) {
         xWins
           ? props.onGetWinner(filterX[1].name)
